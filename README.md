@@ -5,7 +5,7 @@ This project builds a **stroke prediction model** using multiple machine learnin
 
 ## 📊 Dataset
 - **Source:** [Kaggle - Stroke Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset)  
-- **Features:** 22 columns, including patient demographics and health records.  
+- **Features:** 20 columns, including patient demographics and health records.  
 - **Objective:** Predict the likelihood of a **stroke (binary classification problem).**  
 
 ## 🏗️ Key Features
@@ -28,6 +28,52 @@ This project builds a **stroke prediction model** using multiple machine learnin
 | 🌲 **Random Forest**      | **0.974585** | **0.990354**   | 0.958506 | **0.974170** | 0.993180 | 0.990124 |
 | 📊 **Logistic Regression**| 0.808091 | 0.781784   | 0.854772 | 0.816650 | 0.873493 | 0.836539 |
 | 🧠 **Neural Network (NN)** | 0.950207 | 0.934870   | **0.967842** | 0.951070 | 0.981484 | 0.974995 |
+
+## 📌 Detailed Classification Report
+### 🧠 Neural Network:
+```
+              precision    recall  f1-score   support
+
+           0       0.97      0.93      0.95       964
+           1       0.93      0.97      0.95       964
+
+    accuracy                           0.95      1928
+   macro avg       0.95      0.95      0.95      1928
+weighted avg       0.95      0.95      0.95      1928
+```
+### 🚀 XGBoost:
+```
+              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.97       964
+           1       0.99      0.96      0.97       964
+
+    accuracy                           0.97      1928
+   macro avg       0.97      0.97      0.97      1928
+weighted avg       0.97      0.97      0.97      1928
+```
+### 🌲 Random Forest:
+```
+              precision    recall  f1-score   support
+
+           0       0.96      0.99      0.97       964
+           1       0.99      0.96      0.97       964
+
+    accuracy                           0.97      1928
+   macro avg       0.98      0.97      0.97      1928
+weighted avg       0.98      0.97      0.97      1928
+```
+### 📊 Logistic Regression:
+```
+              precision    recall  f1-score   support
+
+           0       0.84      0.76      0.80       964
+           1       0.78      0.85      0.82       964
+
+    accuracy                           0.81      1928
+   macro avg       0.81      0.81      0.81      1928
+weighted avg       0.81      0.81      0.81      1928
+```
 
 ## 📢 Results & Insights
 - 🚀 **Random Forest achieved the highest accuracy (97.46%)**, while **XGBoost performed best in overall AUC (99.52%)**.
