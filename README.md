@@ -77,6 +77,6 @@ weighted avg       0.81      0.81      0.81      1928
 
 ## 📢 Results & Insights
 - 🚀 **Random Forest achieved the highest accuracy (97.46%)**, while **XGBoost performed best in overall AUC (99.52%)**.
-- 📊 **Feature importance analysis** highlighted `age`, `avg_glucose_level`, and `hypertension` as the most impactful features.
+- 📊 **Feature importance analysis** highlighted `age`, `bmi`, `heart_disease`, `avg_glucose_level`, and `hypertension` as the most impactful features.
 - 🎯 **Model calibration improved probability predictions**, reducing **Brier Score** and **Expected Calibration Error (ECE)**.
 - 🔍 **SHAP analysis** provided insights into how different features influence stroke predictions.
